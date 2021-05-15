@@ -1,5 +1,11 @@
 package za.ac.cput.Student;
 
+/*
+ * MUHAMMAD YAASIN COLE
+ *
+ * STUDENT NUMBER 218340869
+ */
+
 import java.util.Collection;
 import java.util.Objects;
 
