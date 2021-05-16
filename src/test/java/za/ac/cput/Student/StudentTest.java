@@ -89,7 +89,7 @@ class StudentTest {
 
         }
 
-        assertSame(contains , contains);
+        assertSame(true , contains);
 
     }
 
@@ -212,6 +212,25 @@ class StudentTest {
             studentSet.add(s);
         }
 
+        Student p = new Student (fName , studentNum);
+        studentSet.add(p);
+
+        boolean isthere = false ;
+
+        for(Student student : studentSet)
+        {
+            if(student.getFirstName().equals(fName))
+            {
+                isthere = true ;
+
+            }
+            else
+                {
+                   isthere = false;
+                }
+
+        }
+
         assertEquals(1 , studentSet.size());
 
     }
@@ -254,6 +273,7 @@ class StudentTest {
         student.add(s);
 
         student.removeAll(student);
+
 
         assertEquals(0, student.size());
 
